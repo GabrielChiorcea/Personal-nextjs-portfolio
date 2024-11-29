@@ -1,0 +1,36 @@
+{
+  "name": "next",
+  "author": "",
+  "description": "",
+  "version": "1.0.0",
+  "license": "",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build && next export",
+    "start": "next start",
+    "lint": "next lint",
+    "ex":"next export"
+  },
+  "dependencies": {
+    "@tailwindcss/typography": "^0.5.9",
+    "aos": "^2.3.4",
+    "gray-matter": "^4.0.3",
+    "next": "13.4.9",
+    "react": "18.2.0",
+    "react-dom": "18.2.0",
+    "react-markdown": "^8.0.7",
+    "rehype-raw": "^6.1.1",
+    "remark-gfm": "^3.0.1",
+    "sass": "^1.63.6",
+    "swiper": "^10.0.3"
+  },
+  "devDependencies": {
+    "autoprefixer": "^10.4.14",
+    "eslint": "8.44.0",
+    "eslint-config-next": "13.4.9",
+    "postcss": "^8.4.25",
+    "tailwind-bootstrap-grid": "^5.0.1",
+    "tailwindcss": "^3.3.2"
+  }
+}
