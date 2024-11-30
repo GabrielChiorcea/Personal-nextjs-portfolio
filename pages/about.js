@@ -205,7 +205,7 @@ const About = ({ aboutPage }) => {
         </section>
       )}
 
-      <section className="py-28 bg-white text-dark rounded-b-2xl" data-aos="fade-in">
+      {/* <section className="py-28 bg-white text-dark rounded-b-2xl" data-aos="fade-in">
         <div className="container">
           <div className="row mb-16 items-end">
             <div className="col-12 text-center">
@@ -274,7 +274,7 @@ const About = ({ aboutPage }) => {
             </div>
           </div>
         </div>
-      </section>
+      </section> */}
     </Layout>
   );
 };

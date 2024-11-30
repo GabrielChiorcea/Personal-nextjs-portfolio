@@ -108,3 +108,10 @@ This web site is using `markedjs/marked`.
 [![NextJS Font](https://img.youtube.com/vi/L8_98i_bMMA/maxresdefault.jpg)](https://www.youtube.com/watch?v=L8_98i_bMMA)
 
 Using Fonts in Next.js (Google Fonts, Local Fonts, Tailwind CSS)
+
+
+## 7. Engage with Your Readers
+Encourage interaction by responding to comments and engaging with your readers on social media. Building a community around your blog fosters a sense of connection and loyalty.
+
+
+> "Light can be an architectural element that brings a sense of life and vitality to a building. It can highlight details, define spaces, and create an emotional connection with the occupants." - [Architectural Lighting Magazine](https://www.archlighting.com)

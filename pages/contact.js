@@ -72,7 +72,7 @@ const Contact = ({ contactPage }) => {
                     type="text"
                     id="full_name"
                     name="full_name"
-                    placeholder="Charlie Edward"
+                    placeholder="Jhon Doe"
                     className="border border-light/90 rounded-lg bg-white h-12 w-full px-4 py-4 focus:border-dark/50 outline-none focus-visible:outline-none focus-visible:shadow-none transition-all duration-300"
                     required
                   />
@@ -83,7 +83,7 @@ const Contact = ({ contactPage }) => {
                     type="email"
                     id="email"
                     name="email"
-                    placeholder="charlie.edward@email.app"
+                    placeholder="jhon.doe@email.tld"
                     className="border border-light/90 rounded-lg bg-white h-12 w-full px-4 py-4 focus:border-dark/50 outline-none focus-visible:outline-none focus-visible:shadow-none transition-all duration-300"
                     required
                   />

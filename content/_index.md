@@ -23,15 +23,16 @@ workProcess:
   title: "Process Delivers Value"
   subtitle: "The approach"
   steps:
-    - title: "Strategy"
+    - title: "Frontend"
       description: |
-        In this phase we will define how your organization wishes to be perceived by consumers. What do you want people to think about your product or service?
+        For front-end development, I primarily work with React, which I consider my main expertise. Additionally, I have experience with C#, but React has been the predominant framework in my projects, allowing me to build dynamic and responsive user interfaces effectively.
 
-    - title: "Execution"
+    - title: "Backend"
       description: |
-        Based on the research, strategic designs solutions will be explored. Multiple route will be presented and the selected will be further developed.
+        In terms of backend development, I have experience working with technologies such as Python and Bash.
 
-    - title: "Launch"
+
+    - title: "Database"
       description: |
-        This is the phase were the launch communication plan will be developed. The key messages will be defined and tailored to the audience of the brand intact.
+        In terms of database management, I have hands-on experience working with MySQL, PL/SQL, and T-SQL. I am proficient in designing, optimizing, and querying databases to support efficient data storage and retrieval, ensuring seamless integration with applications.
 ---

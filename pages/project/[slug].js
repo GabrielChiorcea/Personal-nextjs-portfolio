@@ -7,7 +7,7 @@ import Image from "next/image";
 
 const ProjectPage = ({ nextProject, currentProject: { frontMatter, content } }) => {
   // Current Project frontMatter
-  const { title, image, description, category, projectInfo } = frontMatter;
+  const { title, image, description, category, projectInfo, live } = frontMatter;
 
   return (
     <Layout metaTitle={title} metaDescription={description} ogImage={image}>
@@ -19,6 +19,16 @@ const ProjectPage = ({ nextProject, currentProject: { frontMatter, content } }) 
 
               <h1 className="text-4xl md:text-5xl mb-4 !leading-tight">{title}</h1>
               <p>{description}</p>
+              <div class="py-3">
+                {live.map((item, index)  => (
+                    <a key={index} href={item.link} target="_blank">
+                    <button class="px-6 py-3 rounded-full text-white bg-black hover:bg-gray-800 focus:outline-none focus:ring-2 focus:ring-gray-300">
+                      Acces live
+                    </button>
+                  </a>
+                ))}
+              </div>
+
 
               <ul className="row text-white mt-4">
                 {projectInfo.map((item, index) => (

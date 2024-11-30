@@ -30,7 +30,7 @@ const Footer = () => {
             <div className={`${style["animated-line"]} ${style["animated-line-one"]} mb-5`}>
               <div className={style["line-block"]}>
                 <span className="mr-24">
-                  <span className={style["cta-text"]}>Let’s make something</span>
+                  <span className={style["cta-text"]}>Let’s get in touch</span>
                   <Image
                     className={`inline-block ml-16 ${style["cta-icon"]}`}
                     src="/images/arrow-right.svg"
@@ -40,7 +40,7 @@ const Footer = () => {
                   />
                 </span>
                 <span className="mr-24">
-                  <span className={style["cta-text"]}>Let’s make something</span>
+                  <span className={style["cta-text"]}>Let’s get in touch</span>
                   <Image
                     className={`inline-block ml-16 ${style["cta-icon"]}`}
                     src="/images/arrow-right.svg"
@@ -50,7 +50,7 @@ const Footer = () => {
                   />
                 </span>
                 <span className="mr-24">
-                  <span className={style["cta-text"]}>Let’s make something</span>
+                  <span className={style["cta-text"]}>Let’s get in touch</span>
                   <Image
                     className={`inline-block ml-16 ${style["cta-icon"]}`}
                     src="/images/arrow-right.svg"
@@ -60,7 +60,7 @@ const Footer = () => {
                   />
                 </span>
                 <span className="mr-24">
-                  <span className={style["cta-text"]}>Let’s make something</span>
+                  <span className={style["cta-text"]}>Let’s get in touch</span>
                   <Image
                     className={`inline-block ml-16 ${style["cta-icon"]}`}
                     src="/images/arrow-right.svg"
@@ -70,7 +70,7 @@ const Footer = () => {
                   />
                 </span>
                 <span className="mr-24">
-                  <span className={style["cta-text"]}>Let’s make something</span>
+                  <span className={style["cta-text"]}>Let’s get in touch</span>
                   <Image
                     className={`inline-block ml-16 ${style["cta-icon"]}`}
                     src="/images/arrow-right.svg"
@@ -82,7 +82,7 @@ const Footer = () => {
               </div>
               <div className={style["line-block-copy"]}>
                 <span className="mr-24">
-                  <span className={style["cta-text"]}>Let’s make something</span>
+                  <span className={style["cta-text"]}>Let’s get in touch</span>
                   <Image
                     className={`inline-block ml-16 ${style["cta-icon"]}`}
                     src="/images/arrow-right.svg"
@@ -92,7 +92,7 @@ const Footer = () => {
                   />
                 </span>
                 <span className="mr-24">
-                  <span className={style["cta-text"]}>Let’s make something</span>
+                  <span className={style["cta-text"]}>Let’s get in touch</span>
                   <Image
                     className={`inline-block ml-16 ${style["cta-icon"]}`}
                     src="/images/arrow-right.svg"
@@ -102,7 +102,7 @@ const Footer = () => {
                   />
                 </span>
                 <span className="mr-24">
-                  <span className={style["cta-text"]}>Let’s make something</span>
+                  <span className={style["cta-text"]}>Let’s get in touch</span>
                   <Image
                     className={`inline-block ml-16 ${style["cta-icon"]}`}
                     src="/images/arrow-right.svg"
@@ -112,7 +112,7 @@ const Footer = () => {
                   />
                 </span>
                 <span className="mr-24">
-                  <span className={style["cta-text"]}>Let’s make something</span>
+                  <span className={style["cta-text"]}>Let’s get in touch</span>
                   <Image
                     className={`inline-block ml-16 ${style["cta-icon"]}`}
                     src="/images/arrow-right.svg"
@@ -122,7 +122,7 @@ const Footer = () => {
                   />
                 </span>
                 <span className="mr-24">
-                  <span className={style["cta-text"]}>Let’s make something</span>
+                  <span className={style["cta-text"]}>Let’s get in touch</span>
                   <Image
                     className={`inline-block ml-16 ${style["cta-icon"]}`}
                     src="/images/arrow-right.svg"
@@ -137,7 +137,7 @@ const Footer = () => {
             <div className={`${style["animated-line"]} ${style["animated-line-two"]}`}>
               <div className={style["line-block"]}>
                 <span className="mr-24">
-                  <span className={style["cta-text"]}>Let’s make something</span>
+                  <span className={style["cta-text"]}>Let’s get in touch</span>
                   <Image
                     className={`inline-block ml-16 ${style["cta-icon"]}`}
                     src="/images/arrow-right.svg"
@@ -147,7 +147,7 @@ const Footer = () => {
                   />
                 </span>
                 <span className="mr-24">
-                  <span className={style["cta-text"]}>Let’s make something</span>
+                  <span className={style["cta-text"]}>Let’s get in touch</span>
                   <Image
                     className={`inline-block ml-16 ${style["cta-icon"]}`}
                     src="/images/arrow-right.svg"
@@ -157,7 +157,7 @@ const Footer = () => {
                   />
                 </span>
                 <span className="mr-24">
-                  <span className={style["cta-text"]}>Let’s make something</span>
+                  <span className={style["cta-text"]}>Let’s get in touch</span>
                   <Image
                     className={`inline-block ml-16 ${style["cta-icon"]}`}
                     src="/images/arrow-right.svg"
@@ -167,7 +167,7 @@ const Footer = () => {
                   />
                 </span>
                 <span className="mr-24">
-                  <span className={style["cta-text"]}>Let’s make something</span>
+                  <span className={style["cta-text"]}>Let’s get in touch</span>
                   <Image
                     className={`inline-block ml-16 ${style["cta-icon"]}`}
                     src="/images/arrow-right.svg"
@@ -177,7 +177,7 @@ const Footer = () => {
                   />
                 </span>
                 <span className="mr-24">
-                  <span className={style["cta-text"]}>Let’s make something</span>
+                  <span className={style["cta-text"]}>Let’s get in touch</span>
                   <Image
                     className={`inline-block ml-16 ${style["cta-icon"]}`}
                     src="/images/arrow-right.svg"
@@ -189,7 +189,7 @@ const Footer = () => {
               </div>
               <div className={style["line-block-copy"]}>
                 <span className="mr-24">
-                  <span className={style["cta-text"]}>Let’s make something</span>
+                  <span className={style["cta-text"]}>Let’s get in touch</span>
                   <Image
                     className={`inline-block ml-16 ${style["cta-icon"]}`}
                     src="/images/arrow-right.svg"
@@ -199,7 +199,7 @@ const Footer = () => {
                   />
                 </span>
                 <span className="mr-24">
-                  <span className={style["cta-text"]}>Let’s make something</span>
+                  <span className={style["cta-text"]}>Let’s get in touch</span>
                   <Image
                     className={`inline-block ml-16 ${style["cta-icon"]}`}
                     src="/images/arrow-right.svg"
@@ -209,7 +209,7 @@ const Footer = () => {
                   />
                 </span>
                 <span className="mr-24">
-                  <span className={style["cta-text"]}>Let’s make something</span>
+                  <span className={style["cta-text"]}>Let’s get in touch</span>
                   <Image
                     className={`inline-block ml-16 ${style["cta-icon"]}`}
                     src="/images/arrow-right.svg"
@@ -219,7 +219,7 @@ const Footer = () => {
                   />
                 </span>
                 <span className="mr-24">
-                  <span className={style["cta-text"]}>Let’s make something</span>
+                  <span className={style["cta-text"]}>Let’s get in touch</span>
                   <Image
                     className={`inline-block ml-16 ${style["cta-icon"]}`}
                     src="/images/arrow-right.svg"
@@ -229,7 +229,7 @@ const Footer = () => {
                   />
                 </span>
                 <span className="mr-24">
-                  <span className={style["cta-text"]}>Let’s make something</span>
+                  <span className={style["cta-text"]}>Let’s get in touch</span>
                   <Image
                     className={`inline-block ml-16 ${style["cta-icon"]}`}
                     src="/images/arrow-right.svg"

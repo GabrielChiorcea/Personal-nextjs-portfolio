@@ -120,14 +120,14 @@ const Header = () => {
         <div className="flex justify-between py-6 items-center relative">
           <div className={`w-1/4 transition-all duration-300 ${isScrolled ? "lg:opacity-0 lg:-translate-x-8" : ""}`}>
             <Link href="/" className="inline-block align-middle">
-              <Image
-                // src={logo}
+              {/* <Image
+                src={logo}
                 alt={logoText}
                 width={80}
                 height={29}
                 quality={100}
                 priority
-              />
+              /> */}
             </Link>
           </div>
           <nav

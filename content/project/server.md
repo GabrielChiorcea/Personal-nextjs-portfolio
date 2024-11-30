@@ -16,19 +16,19 @@ projectInfo:
       - Branding
       - Website design
       - Marketing and Planning
-  - title: "website"
-    data: "https://aver.io"
+live:
+  - link: "https://quote.gabrielchiorcea.tech/"
 ---
 
 ## We couldn't be happier with the branding strategy developed.
 
 Throughout the process, Aver's collaborative approach and open communication ensured a seamless experience. The outstanding results achieved have elevated our brand and positioned us for long-term success. We couldn't be happier with Aver's work.
 
-<div class="image columns-1 sm:columns-2 gap-8">
+<!-- <div class="image columns-1 sm:columns-2 gap-8">
 
 ![The Taxi 01.](/images/project/06-01.jpg)
 ![The Taxi 02.](/images/project/06-02.jpg)
-</div>
+</div> -->
 
 ## Challenge
 

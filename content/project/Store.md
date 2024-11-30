@@ -16,8 +16,8 @@ projectInfo:
       - Branding
       - Website design
       - Marketing and Planning
-  - title: "website"
-    data: "https://aver.io"
+live:
+  - link: "https://quote.gabrielchiorcea.tech/"
 ---
 
 ## We couldn't be happier with the branding strategy developed.
@@ -40,8 +40,5 @@ Success is overall the client expresses utmost satisfaction with the work done b
 </div>
 
 
-## Solution
 
-The client expresses great satisfaction with their decision to choose Aver as their branding agency, describing it as one of the best decisions they made. Aver is commended for their professionalism, creativity, and dedication, which resulted in a strong partnership throughout the client's brand journey. Aver's team took the time to deeply understand the client's goals and values, leading to the development of a comprehensive brand strategy that aligned perfectly with the client's vision. This strategy was then translated into a visually captivating and impactful visual identity that truly represents the essence of the brand.
 
-The client appreciates Aver's collaborative approach and open communication, highlighting the seamless experience they had while working together. The outstanding results achieved by Aver have successfully elevated the client's brand and positioned them for long-term success. Overall, the client expresses utmost satisfaction with the work done by Aver.

@@ -15,14 +15,15 @@ about:
     - "/images/about/09.jpg"
     - "/images/about/04.jpg"
   
-  title: "A front-end developer, UI designer, and all-around doodler who enjoys developing accessible, usable and engaging websites & apps that bring your products to life." 
+  title: "I am a technical guy in web and servers, with experience in quickly solving problems and integrating diverse technologies. I have a practical, results-oriented approach and am always eager to learn and optimize existing solutions." 
   description: |
-    My expertise and passion for technology drive me to craft solutions that are both aesthetically pleasing and functional. With years of experience, I excel in creating unique brands, designing websites that meet the needs of your clients.
+        What sets me apart is my diverse experience across various technologies, particularly in web hosting and DevOps. I've developed a strong ability to bridge the gap between development and operations, ensuring seamless deployment, scalability, and performance optimization. This blend of skills allows me to deliver robust solutions that align with both technical and business objectives
+
 
 
 featuredBy:
   enable: true
-  title: "As Featured By"
+  title: "Technology I work with"
   brands:
     - "/images/brands/01.svg"
     - "/images/brands/02.svg"
@@ -33,34 +34,34 @@ featuredBy:
 
 services:
   enable: true
-  title: "What I can do for you"
-  subtitle: "Services"
+  title: "What I can do "
+  subtitle: ""
   rotatingIcon : true
   serviceLists:
-  - title: "Strategy"
+  - title: "Backend"
     active: true
     description: |
-      I analyze the needs of customers, identify potential problems, and provide valuable insights & important future decisions.
+      In terms of backend development, I have experience working with technologies such as Python and Bash.
 
-  - title: "Design"
+  - title: "Frontend"
     active: true
     description: |
-      I produce strong and user-friendly digital solutions in every project. My design process is about making complex solutions simple.
+      For front-end development, I primarily work with React, which I consider my main expertise. Additionally, I have experience with C#, but React has been the predominant framework in my projects, allowing me to build dynamic and responsive user interfaces effectively.
 
-  - title: "Development"
+  - title: "Database"
     active: true
     description: |
-      I build scalable websites that fit needs. Fun micro-interactions, delightful animations and easily maintainable backend.
+      In terms of database management, I have hands-on experience working with MySQL, PL/SQL, and T-SQL. I am proficient in designing, optimizing, and querying databases to support efficient data storage and retrieval, ensuring seamless integration with applications.
 
-  - title: "The whole deal"
+  - title: "Server"
     active: true
     description: |
-      What sets me apart is ability to handle every aspect of web project, from branding to the implementation of your website.
+      I specialize in setting up and managing web servers, primarily using Ubuntu and Almalinux. I have strong expertise in deploying and maintaining SQL servers, ensuring their performance and reliability. Additionally, I work extensively with Docker to create and manage containers for databases, and I am proficient in deploying web applications using Node.js or Python, ensuring smooth integration and continuous delivery across multiple servers.
 
-  - title: "UX Research"
+  - title: "UX/UI"
     active: false
     description: |
-      Coming Soon...
+      I'm not an expert in this area, I understand the importance of creating intuitive and user-friendly interfaces and work closely with design teams to ensure a seamless user experience.
 
 
 whatClientsSay:

@@ -53,7 +53,7 @@ const Home = ({ homepage, projectPage, projects, blogPage, blogPosts, serverPage
         </section>
       )}
 
-      <section className="py-28">
+      <section className="py-0">
         <div className="container">
           <div className="row mb-16 items-end">
             <div className="sm:col-8 order-2 sm:order-1">
@@ -97,20 +97,21 @@ const Home = ({ homepage, projectPage, projects, blogPage, blogPosts, serverPage
         </div>
 
 
-          <div className="row md:gx-4 gy-4">
-                {server.map((project, i) => (
-                  <div
-                    key={project.slug}
-                    className="w-full flex justify-center" // Fiecare element ocupă un rând complet și este centrat
-                  >
-                    <ProjectCard
-                      index={i}
-                      slug={project.slug}
-                      frontMatter={project.frontMatter}
-                    />
-                  </div>
-                ))}
-          </div>
+        <div className="flex justify-center items-center ">
+  {server.map((project, i) => (
+    <div
+      key={project.slug}
+      className="w-full md:w-1/2 lg:w-3/3" // Controlul dimensiunii
+    >
+      <ProjectCard
+        index={i}
+        slug={project.slug}
+        frontMatter={project.frontMatter}
+      />
+    </div>
+  ))}
+</div>
+
 
           <div className="text-center mt-16">
             <Link className="button" href="/project">

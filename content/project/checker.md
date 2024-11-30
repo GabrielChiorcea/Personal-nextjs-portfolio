@@ -1,14 +1,14 @@
 ---
-date: "01-01-2023"
-title: "Everyday"
-description: "Ui/Ux Design"
-image: "/images/project/07.jpg"
-color: "#81A92E"
-category: "Website"
+date: "02-05-2023"
+title: "Checker"
+description: "Branding"
+image: "/images/project/03.jpg"
+color: "#BF4106"
+category: "Fashion"
 
 projectInfo:
   - title: "Client"
-    data: "BocahKecil"
+    data: "Checker"
   - title: "Timeline"
     data: "3 Months"
   - title: "Services"
@@ -16,18 +16,19 @@ projectInfo:
       - Branding
       - Website design
       - Marketing and Planning
-  - title: "website"
-    data: "https://aver.io"
+live:
+  - link: "https://quote.gabrielchiorcea.tech/"
 ---
 
 ## We couldn't be happier with the branding strategy developed.
 
 Throughout the process, Aver's collaborative approach and open communication ensured a seamless experience. The outstanding results achieved have elevated our brand and positioned us for long-term success. We couldn't be happier with Aver's work.
-
 <div class="image columns-1 sm:columns-2 gap-8">
 
-![Everyday 01.](/images/project/07-01.jpg)
-![Everyday 02.](/images/project/07-02.jpg)
+
+![Zimmer 02.](/images/project/03-02.jpg)
+![Zimmer 01.](/images/project/03-01.jpg)
+
 </div>
 
 ## Challenge
@@ -43,8 +44,10 @@ The client expresses great satisfaction with their decision to choose Aver as th
 
 <div class="image columns-1 sm:columns-2 gap-8">
 
-![Everyday 03.](/images/project/07-03.jpg)
-![Everyday 04.](/images/project/07-04.jpg)
+
+![Zimmer 03.](/images/project/03-03.jpg)
+![Zimmer 03.](/images/project/03-04.jpg)
+
 </div>
 
 The client appreciates Aver's collaborative approach and open communication, highlighting the seamless experience they had while working together. The outstanding results achieved by Aver have successfully elevated the client's brand and positioned them for long-term success. Overall, the client expresses utmost satisfaction with the work done by Aver.
