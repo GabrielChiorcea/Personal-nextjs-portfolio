@@ -1,0 +1,37 @@
+{
+  "metaData": {
+    "title" : "Gabriel Chiorcea",
+    "description" : "The future is here!",
+    "author" : "",
+    "keyword" : " nextjs , react, nextjs, next.js, next js ",
+    "ogImage" : "/images/blog/09.jpg"
+  },
+  "baseURL" : "https://gabrielchiorcea.tech/",
+  "logo" : "/images/logo.svg",
+  "logoText" : "Next",
+  "favicon" : "/images/favicon.svg",
+
+  "settings" : {
+    "bannerBgText" : true,
+    "deviceIndicator" : false
+  },
+
+  "copyright" : "",
+
+ 
+
+  "socialLinks" : [
+   
+    
+    {
+      "name": "LIN",
+      "fullName": "Linkedin",
+      "link": "https://www.linkedin.com/in/gabriel-chiorcea/"
+    },
+    {
+      "name": "GITHUB",
+      "fullName": "Github",
+      "link": "https://github.com/GabrielChiorcea"
+    }
+  ]
+}
