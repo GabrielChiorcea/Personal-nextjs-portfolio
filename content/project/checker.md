@@ -1,17 +1,17 @@
 ---
-date: "02-05-2023"
+date: "10-10-2014"
 title: "Checker"
 lang: "Build with C#"
 description: "This project is an interactive web application developed with Blazor WebAssembly, utilizing Fluxor for state management and including custom services for authentication and handling HTTP requests."
 image: "/images/project/03.jpg"
 color: "#BF4106"
-category: "Web App"
+category: "Frontend"
 
 projectInfo:
   - title: "Client"
     data: "World wide"
   - title: "Timeline"
-    data: "In progress"
+    data: "In progress, but ready for tests"
   - title: "Tehnology"
     data: |
       - Blazor
@@ -24,17 +24,17 @@ projectInfo:
       - Activity track
       - Share post 
 live:
-  - link: "https://quote.gabrielchiorcea.tech/"
+  - link: "https://checker.gabrielchiorcea.tech/"
 ---
 
 
 <div class="image columns-1 sm:columns-2 gap-8">
 
 
-![Zimmer 02.](/images/project/03-02.jpg)
-![Zimmer 01.](/images/project/03-01.jpg)
-![Zimmer 03.](/images/project/03-03.jpg)
-![Zimmer 03.](/images/project/03-04.jpg)
+![C# 02.](/images/project/03-02.jpg)
+![C# 01.](/images/project/03-01.jpg)
+![C# 03.](/images/project/03-03.jpg)
+![C# 03.](/images/project/03-04.jpg)
 
 
 </div>

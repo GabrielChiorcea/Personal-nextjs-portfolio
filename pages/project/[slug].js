@@ -16,7 +16,7 @@ const ProjectPage = ({ nextProject, currentProject: { frontMatter, content } }) 
           <div className="row justify-center banner">
             <div className="md:col-7 lg:col-6" data-aos="fade-up-sm">
                <span className="inline-block text-sm rounded-full bg-[#efefef] px-3 py-1 capitalize text-black mb-6">{category}</span>
-               <div className="flex items-center justify-between gap-4 mb-6">
+               <div className="flex items-center  gap-4 mb-6">
                <h1 className="text-4xl md:text-5xl mb-4 !leading-tight">{title}</h1>
               <div class="py-3">
                 {live.map((item, index)  => (

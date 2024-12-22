@@ -1,5 +1,5 @@
 ---
-date: "02-05-2023"
+date: "10-10-2013"
 title: "Backend"
 lang: "Build with Python"
 description: "Flask-based backend application providing user authentication and profile management functionalities."
@@ -11,7 +11,7 @@ projectInfo:
   - title: "Client"
     data: "World wide"
   - title: "Timeline"
-    data: "In progress"
+    data: "In progress, but ready for tests"
   - title: "Tehnology"
     data: |
       - Python
@@ -24,7 +24,7 @@ projectInfo:
       - Profile Management
       - Account Management 
 live:
-  - link: "https://quote.gabrielchiorcea.tech/"
+  - link: "https://backend.gabrielchiorcea.tech/"
 ---
 
 ## Description

@@ -1,30 +1,30 @@
 ---
-date: "02-05-2023"
+date: "10-10-2016"
 title: "Power"
 lang: "Build with React"
-description: "Branding"
+description: "A frontend that sends an Excel file to a dedicated backend, processes the data, and generates visualizations based on the JSON response returned by the backend."
 image: "/images/project/02.jpg"
 color: "#BE0000"
-category: "Web App"
+category: "Frontend"
 
 projectInfo:
   - title: "Client"
     data: "World wide"
   - title: "Timeline"
-    data: "2 Months"
-  - title: "Services"
+    data: "10-10-2024"
+  - title: "Tehnology"
     data: |
-      - Branding
-      - Website design
-      - Marketing and Planning
+      - React
+      - SASS
+      - Redux
   - title: "Functions"
     data: |
-      - Post Like
-      - User Account
-      - Activity track
-      - Share post 
+      - Excel file uploading
+      - HTTP requests
+      - Excel data visualization
+       
 live:
-  - link: "https://quote.gabrielchiorcea.tech/"
+  - link: "https://excelreader.gabrielchiorcea.tech/"
 ---
 
 ## Description.
@@ -35,10 +35,10 @@ This project is built using React for the user interface, Sass for styling, and 
 
 <div class="image columns-1 sm:columns-2 gap-8">
 
-![CocaCola 01.](/images/project/02-01.jpg)
-![CocaCola 02.](/images/project/02-02.jpg)
-![CocaCola 01.](/images/project/02-03.jpg)
-![CocaCola 02.](/images/project/02-04.jpg)
+![React 01.](/images/project/02-01.jpg)
+![React 02.](/images/project/02-02.jpg)
+![React 01.](/images/project/02-03.jpg)
+![React 02.](/images/project/02-04.jpg)
 </div>
 
 

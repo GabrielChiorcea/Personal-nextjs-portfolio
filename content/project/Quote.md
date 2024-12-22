@@ -1,11 +1,11 @@
 ---
-date: "06-05-2023"
+date: "10-10-2017"
 title: "Quote"
 lang: "Build with React" 
 description: "React frontend app using Firebase for backend and Sass for styling. Redux manages state"
 image: "/images/project/01.jpg"
 color: "#67A94C"
-category: "Web App"
+category: "Frontend"
 
 projectInfo:
   - title: "Client"
@@ -39,8 +39,8 @@ This project is a standalone frontend application built with React, focusing on 
 <div class="image columns-1 sm:columns-2 gap-8">
 
 
-![Southpole 02.](/images/project/01.jpg)
-![Southpole 04.](/images/project/01-01.jpg)
+![React 02.](/images/project/01.jpg)
+![React 04.](/images/project/01-01.jpg)
 
 </div>
 
@@ -173,8 +173,8 @@ export default useUpdate;
 
 <div class="image columns-1 sm:columns-2 gap-8">
 
-![Southpole 03.](/images/project/01-02.jpg)
-![Southpole 03.](/images/project/01-03.jpg)
+![React 03.](/images/project/01-02.jpg)
+![React 03.](/images/project/01-03.jpg)
 </div>
 
 

@@ -1,8 +1,8 @@
 ---
 title: "How to Install Apache on Ubuntu 22.04 Using Docker"
 description: "Apache is one of the most widely used web servers, providing a robust platform for hosting websites and web applications."
-image: "/images/blog/09.jpg"
-date: "2023-05-23"
+image: "/images/blog/docker.jpg"
+date: "2024-12-23"
 category: "Server"
 ---
 

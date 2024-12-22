@@ -53,50 +53,63 @@ const Home = ({ homepage, projectPage, projects, blogPage, blogPosts, serverPage
         </section>
       )}
 
-      <section className="py-0">
-        <div className="container">
-          <div className="row mb-16 items-end">
-            <div className="sm:col-8 order-2 sm:order-1">
-              <h2 className="text-4xl md:text-5xl font-secondary font-medium -mt-[6px] text-center sm:text-left">
-                {projectPage.frontMatter.title}
-              </h2>
-            </div>
-            <div className="sm:col-4 order-1 sm:order-2 block mb-4 sm:mb-0 text-center sm:text-right">
-              <span className="font-secondary text-2xl leading-none text-white/75">
-                {projectPage.frontMatter.subtitle}
-              </span>
-            </div>
-          </div>
+<section className="py-0">
+  <div className="container">
+    <div className="row mb-16 items-end">
+      <div className="sm:col-8 order-2 sm:order-1">
+        <h2 className="text-4xl md:text-5xl font-secondary font-medium -mt-[6px] text-center sm:text-left">
+          {projectPage.frontMatter.title}
+        </h2>
+      </div>
+      <div className="sm:col-4 order-1 sm:order-2 block mb-4 sm:mb-0 text-center sm:text-right">
+        <span className="font-secondary text-2xl leading-none text-white/75">
+          {projectPage.frontMatter.subtitle}
+        </span>
+      </div>
+    </div>
 
-          <div className="row md:gx-6 gy-6">
-            {projects.map((project, i) => (
-              <div
-                key={project.slug}
-                className={`${i % 5 >= 3 ? "sm:col-6" : "lg:col-4 sm:col-6"} ${i === 6 ? "hidden lg:block" : ""}`}
-              >
-                <h3 className="py-1"><span class="bg-violet-600 text-black-800 text-1xl 
-                font-melodrama me-2 px-2.5 py-0.5 rounded dark:bg-blue-200 
-                dark:text-blue-800 ms-2">{project.frontMatter.lang.split("").map((char, index) => (
-                  <span 
-                    key={index} 
-                    data-aos="flip-up" 
-                    data-aos-delay={index * 100} 
-                    className="inline-block">
-                    {char === " " ? "\u00A0" : char}
-                  </span>
-                ))}</span></h3>
+    <div className="row md:gx-6 gy-6">
+      {projects.map((project, i) => (
+        <div
+          key={project.slug}
+          style={{
+            height: 'auto',
+            display: 'flex',
+            flexDirection: 'column',
+            justifyContent: 'space-between',
+          }}
+          className={`${
+            i % 6 >= 3 ? 'sm:col-12 lg:col-4' : 'lg:col-4 sm:col-12'
+          } ${i === 7 ? 'hidden lg:block' : ''}`}
+        >
+          <h3 className="py-1">
+            <span className="bg-violet-600 text-black-800 text-1xl font-melodrama me-2 px-2.5 py-0.5 rounded dark:bg-blue-200 dark:text-blue-800 ms-2">
+              {project.frontMatter.lang
+                ? project.frontMatter.lang.split('').map((char, index) => (
+                    <span
+                      key={index}
+                      data-aos="flip-up"
+                      data-aos-delay={index * 100}
+                      className="inline-block"
+                    >
+                      {char === ' ' ? '\u00A0' : char}
+                    </span>
+                  ))
+                : null}
+            </span>
+          </h3>
 
-                <ProjectCard
-                  index={i}
-                  slug={project.slug}
-                  frontMatter={project.frontMatter}
-                  twoColumns={i % 5 >= 3}
-                />
-              </div>
-            ))}
-          </div>
+          <ProjectCard
+            index={i}
+            slug={project.slug}
+            frontMatter={project.frontMatter}
+            twoColumns={i % 6 >= 3}
+          />
         </div>
-      </section>
+      ))}
+    </div>
+  </div>
+</section>
 
       <section className="py-28">
         <div className="container">
@@ -185,7 +198,7 @@ export default Home;
 export const getStaticProps = () => {
   const homepage = getSinglePage("content/_index.md");
   const projectPage = getSinglePage("content/project/_index.md");
-  const projects = getDirectoryPages("content/project", 5);
+  const projects = getDirectoryPages("content/project", 6);
   const serverPage = getSinglePage("content/serverproject/_index.md");
   const server = getDirectoryPages("content/serverproject", 1);
   const blogPage = getSinglePage("content/blog/_index.md");

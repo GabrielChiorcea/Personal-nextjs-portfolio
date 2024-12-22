@@ -1,8 +1,8 @@
 ---
-date: "02-05-2023"
-title: "Store"
+date: "10-10-2015"
+title: "Excel Store"
 lang: "Build with Python" 
-description: "Excel reading data"
+description: "Backend with user creation and authentication, excel reading data and transfer in in JSON as response"
 image: "/images/project/05.jpg"
 color: "#BE0000"
 category: "Backend"
@@ -24,7 +24,7 @@ projectInfo:
       - Custome API
       - Chart creation 
 live:
-  - link: "https://quote.gabrielchiorcea.tech/"
+  - link: "https://excelstore.gabrielchiorcea.tech/"
 ---
 
 ## Arhitecture.
@@ -38,8 +38,8 @@ The Excel file itself is stored in the database as a binary large object (BLOB),
 
 <div class="image columns-1 sm:columns-2 gap-8">
 
-![CocaCola 01.](/images/project/05-01.jpg)
-![CocaCola 02.](/images/project/05-02.jpg)
+![Python 01.](/images/project/05-01.jpg)
+![Python 02.](/images/project/05-02.jpg)
 </div>
 
 

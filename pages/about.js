@@ -60,13 +60,13 @@ const About = ({ aboutPage }) => {
 
   return (
     <Layout metaTitle={title}>
-      <PageHeader title={title} subtitle={subtitle} />
+      {/* <PageHeader title={title} subtitle={subtitle} /> */}
 
-      <section className="py-28 bg-white text-dark">
+      {/* <section className="py-28 bg-white text-dark">
         <div className="container">
           <div className="row justify-center items-center">
             <div
-              className="lg:col-4 md:col-6 col-10 mb-16 lg:mb-0"
+              // className="lg:col-4 md:col-6 col-10 mb-16 lg:mb-0"
               data-aos="fade-up-sm"
             >
               <div
@@ -122,9 +122,9 @@ const About = ({ aboutPage }) => {
             </div>
           </div>
         </div>
-      </section>
+      </section> */}
 
-      {featuredBy.enable && (
+      {/* {featuredBy.enable && (
         <section className="pb-24 pt-10 bg-white text-dark overflow-hidden">
           <div className="container">
             <div className="row">
@@ -159,7 +159,7 @@ const About = ({ aboutPage }) => {
             </div>
           </div>
         </section>
-      )}
+      )} */}
 
       {services.enable && (
         <section className="py-28">
