@@ -5,7 +5,7 @@ banner:
   image: "/images/author.jpg"
   bg_text: "Gabriel"
   description: |
-    I am a technical guy in web and servers, with experience in quickly solving problems and integrating diverse technologies. I have a practical, results-oriented approach and am always eager to learn and optimize existing solutions.
+    I am a technical guy, <em><strong>web</strong></em> and <em><strong>servers</strong></em>, with experience in solving problems and integrating diverse technologies. I have a practical, results-oriented approach and am always eager to learn and optimize existing solutions.
 
 
 featuredBy:

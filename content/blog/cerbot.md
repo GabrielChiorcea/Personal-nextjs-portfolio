@@ -94,7 +94,7 @@ server {
 
     location / {
         root /var/www/yourdomain;
-        index index.html index.htm;
+        index index.html index.php; #etc
     }
 }
 

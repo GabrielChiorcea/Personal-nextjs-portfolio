@@ -15,7 +15,7 @@ about:
     - "/images/about/09.jpg"
     - "/images/about/04.jpg"
   
-  title: "I am a technical guy in web and servers, with experience in quickly solving problems and integrating diverse technologies. I have a practical, results-oriented approach and am always eager to learn and optimize existing solutions." 
+  title: "I am a technical guy, <em><strong>web</strong></em> and <em><strong>servers</strong></em>, with experience in solving problems and integrating diverse technologies. I have a practical, results-oriented approach and am always eager to learn and optimize existing solutions." 
   description: |
         What sets me apart is my diverse experience across various technologies, particularly in web hosting and DevOps. I've developed a strong ability to bridge the gap between development and operations, ensuring seamless deployment, scalability, and performance optimization. This blend of skills allows me to deliver robust solutions that align with both technical and business objectives
 

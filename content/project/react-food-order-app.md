@@ -1,6 +1,6 @@
 ---
-date: "10-10-2012"
-title: "Quote"
+date: "10-10-2024"
+title: "Meals"
 lang: "Build with React" 
 description: "This app use the core functionalities of a food ordering application, including menu navigation, cart management, order placement, and administrative controls. It provides a fully functional and attractive interface for users to interact with."
 image: "/images/project/07.jpg"
