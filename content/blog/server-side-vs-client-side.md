@@ -2,12 +2,12 @@
 title: "Server-Side vs. Client-Side Rendering: Which One to Choose in 2025?"
 description: "It’s 2025, and the web dev world just keeps moving faster than my morning coffee routine in SoCal. If you’re here, you’re probably wondering whether Server-Side Rendering (SSR) or Client-Side Rendering (CSR) is the right pick for your next big project. Spoiler alert: there’s no one-size-fits-all answer, but don’t worry—I’ve got you covered. Let’s break it all down in simple terms and help you make the call!"
 image: "/images/blog/ssrvscsr.jpg"
-date: "2024-12-20"
+date: "2024-12-31"
 category: "Server"
 ---
 
 
-Hey there, tech fam! 👋
+Hey there, tech fan! 👋
 
 ## What’s the Deal with Server-Side Rendering (SSR)?
 
