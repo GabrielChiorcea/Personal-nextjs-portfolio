@@ -185,8 +185,7 @@ pip install django gunicorn
 1.  Now, let’s create a new Django project:
 
 ```bash
-
-django-admin startproject myproject 
+django-admin startproject myproject .
 ```
 
 2.  To test that everything’s running, start the Django development server:
