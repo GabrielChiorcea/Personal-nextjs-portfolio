@@ -150,12 +150,12 @@ sudo ln -s /etc/nginx/sites-available/domain.com /etc/nginx/sites-enabled/`
 
 2.  Check for configuration errors:
 ```bash
-sudo nginx -t` 
+sudo nginx -t
 ```
 
 3.  If everything checks out, restart Nginx:
 ```bash
-sudo systemctl restart nginx` 
+sudo systemctl restart nginx
 ```
 
 ----------
@@ -169,13 +169,13 @@ Next, let’s get your Django project set up and ready to go!
 ```bash
 cd /var/www/domain.com/app
 python3 -m venv venv
-source venv/bin/activate` 
+source venv/bin/activate 
 ```
 
 2.  Install Django and Gunicorn:
 
 ```bash
-pip install django gunicorn` 
+pip install django gunicorn 
 ```
 
 ----------
@@ -186,7 +186,7 @@ pip install django gunicorn`
 
 ```bash
 
-django-admin startproject myproject .
+django-admin startproject myproject 
 ```
 
 2.  To test that everything’s running, start the Django development server:
@@ -201,11 +201,9 @@ python3 manage.py runserver
 
 1.  Create the static files directory:
 
-arduino
-
-Copy code
-
-`mkdir -p /var/www/domain.com/app/static` 
+```bash
+mkdir -p /var/www/domain.com/app/static
+```
 
 2.  Update `settings.py` to point to the correct location for static files:
 
