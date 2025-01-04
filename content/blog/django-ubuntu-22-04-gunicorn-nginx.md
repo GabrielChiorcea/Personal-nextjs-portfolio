@@ -1,56 +1,70 @@
-# Ghid pentru configurarea unui server Django cu Nginx și Gunicorn
 
-Acest ghid te va învăța cum să configurezi un server web pentru o aplicație Django utilizând Nginx și Gunicorn pe un server Ubuntu. Vom aborda pașii pentru instalarea pachetelor necesare, crearea unui mediu virtual Python și configurarea serverului pentru a rula aplicația Django în producție.
+# Guide to Setting Up a Django Server with Nginx and Gunicorn
 
-## Pregătirea serverului
+This step-by-step guide will show you how to set up a web server for your Django app using Nginx and Gunicorn on an Ubuntu server. We'll walk you through everything from installing the necessary packages to configuring your environment to run Django in production. Let's get started!
 
-Începe prin actualizarea serverului și instalarea pachetelor necesare pentru a putea configura aplicația Django:
+## Preparing the Server
 
-```bash
+First things first: we need to update your server and install the essential packages.
 
-`sudo apt update && sudo apt upgrade -y
-sudo apt install python3-pip python3-venv python3-dev libpq-dev nginx -y` 
-```
-
-Explicație:
-
--   `python3-pip`: Pachetul pentru instalarea de pachete Python.
--   `python3-venv`: Permite crearea unui mediu virtual pentru Python.
--   `python3-dev`: Pachetele de dezvoltare pentru Python.
--   `libpq-dev`: Bibliotecă necesară pentru interacțiunea cu PostgreSQL.
--   `nginx`: Server web de utilizat pentru a deservi aplicația Django.
-
-### Crearea directorului pentru site
-
-Următorul pas este să creezi directorul pentru fișierele aplicației tale Django.
+ -  Run these commands to update and install everything you need:
 
 ```bash
-`sudo mkdir -p /var/www/domain.com/app` 
+sudo apt update && sudo apt upgrade -y
+sudo apt install python3-pip python3-venv python3-dev libpq-dev nginx -y
 ```
 
-Acum, setează permisiunile corecte pentru a permite accesul utilizatorului curent:
+Here’s what each package is for:
+
+- `python3-pip`: The tool that lets you install Python packages you’ll need for your app.
+    
+- `python3-venv`: Allows you to create a virtual environment for Python—this keeps things nice and clean.
+    
+- `python3-dev`: Development headers and libraries for building Python packages.
+    
+- `libpq-dev`: Required for connecting your Django app to PostgreSQL if you're using that as your database.
+    
+-  `nginx`: This is the web server we’re going to use to serve your Django app.
+
+----------
+
+### Creating the App Directory
+
+Now let’s create the directory where your Django app will live and set the right permissions.
+
+1.  Make the directory:
 
 ```bash
-
-`sudo chown -R $USER:$USER /var/www/domain.com/app
-sudo chmod -R 755 /var/www/domain.com` 
+sudo mkdir -p /var/www/domain.com/app
 ```
-
-Aceste comenzi asigură că directorul are permisiuni corespunzătoare pentru a fi folosit de utilizatorul curent și pentru a fi accesibil pentru aplicațiile care rulează pe server.
-
-### Configurarea Virtual Host în Nginx
-
-Pentru a configura Nginx să servească aplicația Django, creează un fișier de configurare pentru domeniul tău.
+2.  Set the correct permissions:
 
 ```bash
+sudo chown -R $USER:$USER /var/www/domain.com/app
+sudo chmod -R 755 /var/www/domain.com
+``` 
+What’s happening here:
+-   `mkdir -p`: Makes sure all the necessary folders are created (even the ones in the path).
+  
+-   `chown`: Changes the ownership of the directory to the current user (you).
+  
+-  `chmod`: Ensures the right read/execute permissions for the directory.
 
-`sudo nano /etc/nginx/sites-available/domain.com` 
+----------
+
+### Configuring Nginx for Your App
+
+Now it’s time to set up Nginx to serve your Django app. Let’s create a configuration file for your domain.
+
+1.  Create the config file:
+```bash
+sudo nano /etc/nginx/sites-available/domain.com
 ```
 
-Adaugă următoarea configurație:
+2.  Add the following content to the file:
 
-nginx
 
+```bash
 `server {
     listen 80;
     server_name domain.com www.domain.com;
@@ -62,23 +76,34 @@ nginx
         try_files $uri $uri/ =404;
     }
 }` 
+```
+What’s happening here:
+ -   `listen 80`: Tells Nginx to listen for HTTP traffic on port 80 (the standard for web traffic).
+    
+ -   `server_name`: This specifies which domains Nginx should handle with this config.
+   
+ -  `try_files`: It checks if the requested files exist. If not, it returns a 404 error.
 
-Explicație:
+----------
 
--   Configurația de mai sus redirecționează traficul HTTP pe portul 80 către rădăcina site-ului tău. Dacă ai nevoie de HTTPS, vom configura SSL mai târziu.
+### Setting Up SSL with Let's Encrypt
 
-#### Configurarea SSL
+For added security, you should use HTTPS. If you don’t already have an SSL certificate, Let’s Encrypt is a free, trusted option.
 
-Pentru a asigura conexiuni securizate, este recomandat să folosești HTTPS. Dacă ai un certificat SSL de la Let's Encrypt, poți folosi următoarea configurație:
+1.  First, let’s redirect all HTTP traffic to HTTPS:
 
-nginx
 
-`server {
+```bash
+server {
     listen 80;
     server_name domain.com www.domain.com;
     return 301 https://$host$request_uri;
 }
+```
 
+2.  Next, let’s set up the HTTPS server configuration:
+
+```bash
 server {
     listen 443 ssl;
     server_name domain.com www.domain.com;
@@ -99,128 +124,121 @@ server {
     location /static/ {
         alias /var/www/domain.com/app/static/;
     }
-}` 
+}
+``` 
 
-Explicație:
+ Here’s what’s going on:
+-   `proxy_pass`: This tells Nginx to forward incoming requests to Gunicorn (which will run your Django app on port 8000).
+    
+-   `alias`: This directs Nginx to the static files folder where your Django app will store its static assets.
 
--   Nginx va redirecționa traficul HTTP pe HTTPS și va gestiona fișierele statice pentru aplicația ta Django.
--   `proxy_pass` redirecționează cererile către Gunicorn, care rulează aplicația Django pe portul 8000.
+----------
 
-### Activarea Virtual Host și repornirea Nginx
+### Activating the Nginx Configuration and Restarting the Service
 
-Activează configurația pentru Nginx prin crearea unui link simbolic:
+Now that we’ve got Nginx set up, let’s activate the configuration and restart Nginx.
+
+1.  Enable the site by creating a symbolic link:
 
 ```bash
-
-`sudo ln -s /etc/nginx/sites-available/domain.com /etc/nginx/sites-enabled/` 
+sudo ln -s /etc/nginx/sites-available/domain.com /etc/nginx/sites-enabled/` 
 ```
 
-Verifică configurația Nginx pentru erori:
-
-bash
-
-`sudo nginx -t` 
-
-Dacă nu sunt erori, repornește Nginx:
-
+2.  Check for configuration errors:
 ```bash
-
-`sudo systemctl restart nginx
+sudo nginx -t` 
 ```
 
-## 2. Configurarea proiectului Django
+3.  If everything checks out, restart Nginx:
+```bash
+sudo systemctl restart nginx` 
+```
 
-### Crearea unui mediu virtual pentru Python
+----------
 
-Intră în directorul aplicației tale și creează un mediu virtual Python:
+## Setting Up the Django Project
+
+Next, let’s get your Django project set up and ready to go!
+
+1.  Create a virtual environment for Python:
 
 ```bash
-
-`cd /var/www/domain.com/app
+cd /var/www/domain.com/app
 python3 -m venv venv
 source venv/bin/activate` 
 ```
 
-Instalează Django și Gunicorn în mediul virtual:
+2.  Install Django and Gunicorn:
 
 ```bash
-
-`pip install django gunicorn` 
+pip install django gunicorn` 
 ```
 
-### Crearea proiectului Django
+----------
 
-Acum, creează un proiect Django folosind comanda:
+### Creating the Django Project
+
+1.  Now, let’s create a new Django project:
 
 ```bash
 
-`django-admin startproject myproject .` 
+django-admin startproject myproject .
 ```
 
-### Testarea aplicației Django
-
-Verifică dacă aplicația rulează corect prin utilizarea serverului de dezvoltare:
+2.  To test that everything’s running, start the Django development server:
 
 ```bash
-
-`python3 manage.py runserver` 
+python3 manage.py runserver
 ```
 
-### Migrările bazei de date
+----------
 
-Execută migrarea bazei de date pentru a crea structura inițială:
+### Configuring Static Files
 
-```bash
+1.  Create the static files directory:
 
-`python manage.py migrate` 
-```
+arduino
 
-### Configurarea fișierelor statice
-
-Django necesită un director pentru fișierele statice. Creează-l:
-
-```bash
+Copy code
 
 `mkdir -p /var/www/domain.com/app/static` 
-```
 
-Modifică `settings.py` pentru a configura locația fișierelor statice:
+2.  Update `settings.py` to point to the correct location for static files:
 
-```python
-
-`STATIC_ROOT = "/var/www/domain.com/app/static/"
-STATIC_URL = "/static/"` 
-```
-
-Colectează fișierele statice:
 
 ```bash
-
-`python manage.py collectstatic` 
+STATIC_ROOT = "/var/www/domain.com/app/static/"
+STATIC_URL = "/static/"
 ```
 
-Setează permisiunile fișierelor statice pentru utilizatorul `www-data`:
+3.  Collect all the static files:
+```bash
+python manage.py collectstatic
+```
+
+4.  Set the right permissions on the static files folder:
 
 ```bash
-
-`sudo chown -R www-data:www-data /var/www/domain.com/app/static
-sudo chmod -R 755 /var/www/domain.com/app/static` 
+sudo chown -R www-data:www-data /var/www/domain.com/app/static
+sudo chmod -R 755 /var/www/domain.com/app/static
 ```
 
-### Crearea unui serviciu Systemd pentru Gunicorn
+----------
 
-Crează un fișier de serviciu pentru Gunicorn:
+### Setting Up the Gunicorn Service
+
+Gunicorn will serve your Django app, so let’s set it up with a systemd service.
+
+1.  Create the Gunicorn service file:
 
 ```bash
-
-`sudo nano /etc/systemd/system/gunicorn.service` 
+sudo nano /etc/systemd/system/gunicorn.service
 ```
 
-Adaugă următoarele setări:
+2.  Add the following configuration:
 
-ini
-
-`[Unit]
+```bash
+[Unit]
 Description=gunicorn daemon for Django project
 After=network.target
 
@@ -231,41 +249,40 @@ WorkingDirectory=/var/www/domain.com/app
 ExecStart=/var/www/domain.com/app/venv/bin/gunicorn --workers 3 --bind 127.0.0.1:8000 myproject.wsgi:application
 
 [Install]
-WantedBy=multi-user.target` 
+WantedBy=multi-user.target
+```
 
-Verifică permisiunile fișierului:
+3.  Check the permissions:
 
-bash
+```bash
+ls -l /etc/systemd/system/gunicorn.service
+```
 
-`ls -l /etc/systemd/system/gunicorn.service` 
+If the permissions need fixing:
 
-Permisiunile ar trebui să fie:
-
-bash
-
-`-rw-r--r-- 1 root root  [data] /etc/systemd/system/gunicorn.service` 
-
-Dacă permisiunile nu sunt corecte, ajustează-le:
-
-bash
-
-`sudo chmod 644 /etc/systemd/system/gunicorn.service` 
-
-### Activarea și pornirea serviciului Gunicorn
-
-Activează și pornește serviciul:
-
-bash
-
-`sudo systemctl start gunicorn
-sudo systemctl enable gunicorn` 
-
-Verifică starea serviciului:
-
-bash
-
-`sudo systemctl status gunicorn` 
+```bash
+sudo chmod 644 /etc/systemd/system/gunicorn.service
+```
 
 ----------
 
-enter code here
+### Starting the Gunicorn Service
+
+1.  Enable and start Gunicorn:
+
+```bash
+sudo systemctl start gunicorn
+sudo systemctl enable gunicorn
+```
+
+
+2.  To check that everything’s working:
+
+
+```bash
+sudo systemctl status gunicorn
+``` 
+
+----------
+
+And that’s it! You’ve successfully set up your Django app with Nginx and Gunicorn. Your app is now ready to handle traffic in production, and you’ve ensured it’s secure and performant. Enjoy the smooth sailing!
