@@ -2,7 +2,7 @@
 title: "Guide to Setting Up a Django Server with Nginx and Gunicorn"
 description: "This step-by-step guide will show you how to set up a web server for your Django app using Nginx and Gunicorn on an Ubuntu server. We'll walk you through everything from installing the necessary packages to configuring your environment to run Django in production. Let's get started!"
 image: "/images/blog/django.jpg"
-date: "2024-01-04"
+date: "2025-01-04"
 category: "Server"
 ---
 
