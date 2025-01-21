@@ -18,15 +18,13 @@ To get started, you’ll need Certbot – it’s the official tool from Let’s 
 
 For Ubuntu/Debian:
 bash
-Copy
-Edit
+
 sudo apt update
 sudo apt install certbot
 sudo apt install python3-certbot-nginx  # If you're using Nginx
 For CentOS/RHEL:
 bash
-Copy
-Edit
+
 sudo yum install epel-release
 sudo yum install certbot
 2. Obtain Your SSL Certificate from Let’s Encrypt
@@ -104,8 +102,7 @@ sudo systemctl restart jenkins
 Once Jenkins has restarted, head over to your browser and navigate to:
 
 arduino
-Copy
-Edit
+
 https://yourdomain.com:8443
 You should see Jenkins with the HTTPS protocol, and your browser should indicate that the connection is secure (with a green padlock icon).
 
@@ -113,8 +110,7 @@ You should see Jenkins with the HTTPS protocol, and your browser should indicate
 Let's Encrypt certificates are valid for 90 days, but don’t worry – Certbot makes it easy to renew them automatically. Certbot should already be set up to renew your certificates, but you can verify it by running:
 
 bash
-Copy
-Edit
+
 sudo certbot renew --dry-run
 This command will simulate a renewal process, ensuring that everything is ready when the certificate is about to expire.
 
