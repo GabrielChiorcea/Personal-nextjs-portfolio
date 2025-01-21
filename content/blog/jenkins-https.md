@@ -36,28 +36,24 @@ For Nginx:
 If you’re running Nginx, this command will automatically configure SSL for you:
 
 bash
-Copy
-Edit
+
 sudo certbot --nginx -d yourdomain.com
 For Apache:
 If you’re using Apache, Certbot has a module for that too:
 
 bash
-Copy
-Edit
+
 sudo certbot --apache -d yourdomain.com
 For Standalone (No Web Server):
 If you’re not using a web server, Certbot can handle everything via its standalone mode:
 
 bash
-Copy
-Edit
+
 sudo certbot certonly --standalone -d yourdomain.com
 Once the process is done, Certbot will place your certificates in the following directory:
 
 bash
-Copy
-Edit
+
 /etc/letsencrypt/live/yourdomain.com/
 You’ll have two important files:
 
@@ -69,8 +65,7 @@ Now, it’s time to create a PKCS#12 (.p12) file, which Jenkins will use to enab
 Run the following command to create your .p12 file:
 
 bash
-Copy
-Edit
+
 sudo openssl pkcs12 -export -out /var/lib/jenkins/jenkins.p12 \
   -inkey /etc/letsencrypt/live/yourdomain.com/privkey.pem \
   -in /etc/letsencrypt/live/yourdomain.com/fullchain.pem
@@ -80,14 +75,12 @@ Next, we’ll configure Jenkins to use the SSL certificate you just created. Thi
 Create or edit the override configuration file for Jenkins:
 
 bash
-Copy
-Edit
+
 sudo nano /etc/systemd/system/jenkins.service.d/override.conf
 Add the following lines to specify the keystore and password:
 
 ini
-Copy
-Edit
+
 [Service]
 Environment="JENKINS_HTTPS_PORT=8443"
 Environment="JENKINS_HTTPS_KEYSTORE=/var/lib/jenkins/jenkins.p12"
@@ -97,16 +90,14 @@ Replace <your-password> with the password you set when creating the .p12 file.
 Ensure the correct file permissions: Jenkins needs to be able to read the .p12 file. Make sure the file is owned by the Jenkins user and has the correct permissions:
 
 bash
-Copy
-Edit
+
 sudo chown jenkins:jenkins /var/lib/jenkins/jenkins.p12
 sudo chmod 640 /var/lib/jenkins/jenkins.p12
 5. Restart Jenkins
 With the configuration in place, restart Jenkins to apply the changes:
 
 bash
-Copy
-Edit
+
 sudo systemctl daemon-reload
 sudo systemctl restart jenkins
 6. Verify HTTPS is Working
