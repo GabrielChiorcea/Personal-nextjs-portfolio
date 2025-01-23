@@ -1,5 +1,5 @@
 ---
-date: "10-10-2015"
+date: "2015-10-10"
 title: "Excel Store"
 lang: "Build with Python" 
 description: "Backend with user creation and authentication, excel reading data and transfer in in JSON as response"
@@ -36,7 +36,7 @@ Excel files are read using Pandas, which converts the file content into a DataFr
 The Excel file itself is stored in the database as a binary large object (BLOB), ensuring secure and efficient storage
 
 
-<div class="image columns-1 sm:columns-2 gap-8">
+<div className="image columns-1 sm:columns-2 gap-8">
 
 ![Python 01.](/images/project/05-01.jpg)
 ![Python 02.](/images/project/05-02.jpg)

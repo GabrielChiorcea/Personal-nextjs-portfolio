@@ -1,5 +1,5 @@
 ---
-date: "10-10-2013"
+date: "2013-10-10"
 title: "Backend"
 lang: "Build with Python"
 description: "Flask-based backend application providing user authentication and profile management functionalities."

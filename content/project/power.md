@@ -1,5 +1,5 @@
 ---
-date: "10-10-2016"
+date: "2016-10-10"
 title: "Power"
 lang: "Build with React"
 description: "A frontend that sends an Excel file to a dedicated backend, processes the data, and generates visualizations based on the JSON response returned by the backend."
@@ -33,7 +33,7 @@ This frontend serves two primary and critical functions: processing an Excel fil
 
 This project is built using React for the user interface, Sass for styling, and Redux for state management.
 
-<div class="image columns-1 sm:columns-2 gap-8">
+<div className="image columns-1 sm:columns-2 gap-8">
 
 ![React 01.](/images/project/02-01.jpg)
 ![React 02.](/images/project/02-02.jpg)

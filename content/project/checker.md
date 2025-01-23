@@ -1,5 +1,5 @@
 ---
-date: "10-10-2023"
+date: "2023-11-11"
 title: "Checker"
 lang: "Build with C#"
 description: "This project is an interactive web application developed with Blazor WebAssembly, utilizing Fluxor for state management and including custom services for authentication and handling HTTP requests."
@@ -28,7 +28,7 @@ live:
 ---
 
 
-<div class="image columns-1 sm:columns-2 gap-8">
+<div className="image columns-1 sm:columns-2 gap-8">
 
 
 ![C# 02.](/images/project/03-02.jpg)

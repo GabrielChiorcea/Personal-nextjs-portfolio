@@ -1,5 +1,5 @@
 ---
-date: "10-10-2017"
+date: "2017-10-10"
 title: "Quote"
 lang: "Build with React" 
 description: "React frontend app using Firebase for backend and Sass for styling. Redux manages state"
@@ -36,7 +36,7 @@ live:
 
 This project is a standalone frontend application built with React, focusing on delivering a streamlined user experience. It does not have a dedicated backend; instead, it relies on Firebase as a Backend-as-a-Service (BaaS) for data storage and real-time functionality. Designed with a mobile-first approach, the application prioritizes optimization for mobile devices, providing core features inspired by Facebook, such as sharing posts and liking them.
 
-<div class="image columns-1 sm:columns-2 gap-8">
+<div className="image columns-1 sm:columns-2 gap-8">
 
 
 ![React 02.](/images/project/01.jpg)
@@ -171,7 +171,7 @@ export default useUpdate;
 
 ## More
 
-<div class="image columns-1 sm:columns-2 gap-8">
+<div className="image columns-1 sm:columns-2 gap-8">
 
 ![React 03.](/images/project/01-02.jpg)
 ![React 03.](/images/project/01-03.jpg)

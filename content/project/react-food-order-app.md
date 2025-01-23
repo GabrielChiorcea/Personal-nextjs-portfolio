@@ -1,5 +1,5 @@
 ---
-date: "10-10-2024"
+date: "2024-10-10"
 title: "Meals"
 lang: "Build with React" 
 description: "This app use the core functionalities of a food ordering application, including menu navigation, cart management, order placement, and administrative controls. It provides a fully functional and attractive interface for users to interact with."
@@ -36,7 +36,7 @@ live:
 ## Arhitecture. 
 
 
-<div class="image columns-1 sm:columns-2 gap-8">
+<div className="image columns-1 sm:columns-2 gap-8">
 
 
 ![React 02.](/images/project/07.jpg)
@@ -67,7 +67,7 @@ React Meals is a web-based food ordering application developed using React and F
 
 Admins can manage products, updating their availability directly from the application interface. Administrative features are protected and accessible only to authorized users.
 
-<div class="image columns-1 sm:columns-2 gap-8">
+<div className="image columns-1 sm:columns-2 gap-8">
 
 ![React 03.](/images/project/07-02.jpg)
 ![React 03.](/images/project/07-03.jpg)
