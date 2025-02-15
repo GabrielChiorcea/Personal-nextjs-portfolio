@@ -2,7 +2,7 @@
 date: "2015-10-10"
 title: "Excel Store"
 lang: "Build with Python" 
-description: "Backend with user creation and authentication, excel reading data and transfer in in JSON as response"
+description: "This application serves as a backend capable of processing and reading data from Excel files. To utilize this backend and connect it to a frontend, a user account is required. The account is essential as it provides a unique API key for authentication and authorization."
 image: "/images/project/05.jpg"
 color: "#BE0000"
 category: "Backend"

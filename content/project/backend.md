@@ -2,7 +2,7 @@
 date: "2013-10-10"
 title: "Backend"
 lang: "Build with Python"
-description: "Flask-based backend application providing user authentication and profile management functionalities."
+description: "This backend is a Flask-based web application that provides user authentication and profile management functionalities. It is designed to handle user sign-up, login, profile updates, and account management."
 image: "/images/project/04.jpg"
 color: "#307B93"
 category: "Backend"

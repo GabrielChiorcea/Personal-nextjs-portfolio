@@ -24,8 +24,9 @@ projectInfo:
     data: |
       - Authentication and Authorization
       - Data Fetching and API Integration
-      - Oder state managemnet
+      - Order state managemnet
       - Admin/User UI 
+      - Product createing
  
 live:
   - link: "https://meals.gabrielchiorcea.tech/"

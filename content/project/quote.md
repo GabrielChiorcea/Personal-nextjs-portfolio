@@ -2,7 +2,7 @@
 date: "2017-10-10"
 title: "Quote"
 lang: "Build with React" 
-description: "React frontend app using Firebase for backend and Sass for styling. Redux manages state"
+description: "This project is a standalone frontend application built with React, focusing on delivering a streamlined user experience. It does not have a dedicated backend; instead, it relies on Firebase as a Backend-as-a-Service (BaaS) for data storage and real-time functionality."
 image: "/images/project/01.jpg"
 color: "#67A94C"
 category: "Frontend"

@@ -2,7 +2,7 @@
 date: "2016-10-10"
 title: "Power"
 lang: "Build with React"
-description: "A frontend that sends an Excel file to a dedicated backend, processes the data, and generates visualizations based on the JSON response returned by the backend."
+description: "This frontend serves two primary and critical functions: processing an Excel file and handling JSON-formatted data received from the backend. The received data is utilized to create a summarized, tabular visualization of the Excel content, ensuring user-friendly data representation."
 image: "/images/project/02.jpg"
 color: "#BE0000"
 category: "Frontend"

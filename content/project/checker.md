@@ -11,18 +11,17 @@ projectInfo:
   - title: "Client"
     data: "World wide"
   - title: "Timeline"
-    data: "In progress, but ready for tests"
+    data: "Ready for tests"
   - title: "Tehnology"
     data: |
-      - Blazor
+      - C#, Blazor
       - Fluxor 
       - Bootstrap  
   - title: "Functions"
     data: |
-      - Post Like
+      - User Profile
       - User Account
-      - Activity track
-      - Share post 
+      - Delete, Update, Create user acount
 live:
   - link: "https://checker.gabrielchiorcea.tech/"
 ---
