@@ -1,6 +1,6 @@
 ---
 date: "2016-10-10"
-title: "Power"
+title: "Excel Model Viewer"
 lang: "Build with React"
 description: "This frontend serves two primary and critical functions: processing an Excel file and handling JSON-formatted data received from the backend. The received data is utilized to create a summarized, tabular visualization of the Excel content, ensuring user-friendly data representation."
 image: "/images/project/02.jpg"
@@ -24,7 +24,7 @@ projectInfo:
       - Excel data visualization
        
 live:
-  - link: "https://excelreader.gabrielchiorcea.tech/"
+  - link: "https://excel-modelviewer.gabrielchiorcea.eu/"
 ---
 
 ## Description.

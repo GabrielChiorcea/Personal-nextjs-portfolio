@@ -1,6 +1,6 @@
 ---
 date: "2023-11-11"
-title: "Checker"
+title: "User Manager"
 lang: "Build with C#"
 description: "This project is an interactive web application developed with Blazor WebAssembly, utilizing Fluxor for state management and including custom services for authentication and handling HTTP requests."
 image: "/images/project/03.jpg"
@@ -23,7 +23,7 @@ projectInfo:
       - User Account
       - Delete, Update, Create user acount
 live:
-  - link: "https://checker.gabrielchiorcea.tech/"
+  - link: "https://user-manager.gabrielchiorcea.eu/"
 ---
 
 

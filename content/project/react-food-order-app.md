@@ -1,6 +1,6 @@
 ---
 date: "2024-10-10"
-title: "Meals"
+title: "Food Order App"
 lang: "Build with React" 
 description: "This app use the core functionalities of a food ordering application, including menu navigation, cart management, order placement, and administrative controls. It provides a fully functional and attractive interface for users to interact with."
 image: "/images/project/07.jpg"
@@ -29,7 +29,7 @@ projectInfo:
       - Product createing
  
 live:
-  - link: "https://meals.gabrielchiorcea.tech/"
+  - link: "https://food-order.gabrielchiorcea.eu/"
 ---
 
 

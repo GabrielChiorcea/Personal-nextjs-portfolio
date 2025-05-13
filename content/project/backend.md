@@ -1,6 +1,6 @@
 ---
 date: "2013-10-10"
-title: "Backend"
+title: "User Manager Backend"
 lang: "Build with Python"
 description: "This backend is a Flask-based web application that provides user authentication and profile management functionalities. It is designed to handle user sign-up, login, profile updates, and account management."
 image: "/images/project/04.jpg"
@@ -24,7 +24,7 @@ projectInfo:
       - Profile Management
       - Account Management 
 live:
-  - link: "https://backend.gabrielchiorcea.tech/"
+  - link: "https://user-manager-backend.gabrielchiorcea.eu/"
 ---
 
 ## Description

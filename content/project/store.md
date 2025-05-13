@@ -1,6 +1,6 @@
 ---
 date: "2015-10-10"
-title: "Excel Store"
+title: "Excel Model Viewer Backend"
 lang: "Build with Python" 
 description: "This application serves as a backend capable of processing and reading data from Excel files. To utilize this backend and connect it to a frontend, a user account is required. The account is essential as it provides a unique API key for authentication and authorization."
 image: "/images/project/05.jpg"
@@ -24,7 +24,7 @@ projectInfo:
       - Custome API
       - Chart creation 
 live:
-  - link: "https://excelstore.gabrielchiorcea.tech/"
+  - link: "https://excel-modelviewer-backend.gabrielchiorcea.eu/"
 ---
 
 ## Arhitecture.

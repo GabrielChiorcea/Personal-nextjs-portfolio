@@ -1,6 +1,6 @@
 ---
 date: "2017-10-10"
-title: "Quote"
+title: "Social App"
 lang: "Build with React" 
 description: "This project is a standalone frontend application built with React, focusing on delivering a streamlined user experience. It does not have a dedicated backend; instead, it relies on Firebase as a Backend-as-a-Service (BaaS) for data storage and real-time functionality."
 image: "/images/project/01.jpg"
@@ -26,7 +26,7 @@ projectInfo:
       - Share post   
  
 live:
-  - link: "https://quote.gabrielchiorcea.tech/"
+  - link: "https://social-app.gabrielchiorcea.eu/"
 ---
 
 
